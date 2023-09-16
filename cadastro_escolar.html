@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=M+PLUS+1p:wght@500;700&family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro_material.css">
+    <link rel="stylesheet" href="header.css">
+    <title>Cadastro Escolar</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb-filled" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z"
+                        stroke-width="0"></path>
+                    <path d="M12 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z"
+                        stroke-width="0"></path>
+                    <path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z"
+                        stroke-width="0"></path>
+                    <path
+                        d="M4.893 4.893a1 1 0 0 1 1.32 -.083l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 0 -1.414z"
+                        stroke-width="0"></path>
+                    <path
+                        d="M17.693 4.893a1 1 0 0 1 1.497 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7z"
+                        stroke-width="0"></path>
+                    <path d="M14 18a1 1 0 0 1 1 1a3 3 0 0 1 -6 0a1 1 0 0 1 .883 -.993l.117 -.007h4z" stroke-width="0">
+                    </path>
+                    <path
+                        d="M12 6a6 6 0 0 1 3.6 10.8a1 1 0 0 1 -.471 .192l-.129 .008h-6a1 1 0 0 1 -.6 -.2a6 6 0 0 1 3.6 -10.8z"
+                        stroke-width="0"></path>
+                </svg>
+                <h1>Unity</h1>
+            </div>
+            <ul>
+                <li class="list-item">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                            <path d="M10 12h4v4h-4z"></path>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="cadastro.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-list"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
+                            </path>
+                            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z">
+                            </path>
+                            <path d="M9 12l.01 0"></path>
+                            <path d="M13 12l2 0"></path>
+                            <path d="M9 16l.01 0"></path>
+                            <path d="M13 16l2 0"></path>
+                        </svg>
+                        Cadastrar
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="material_escolar.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backpack" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 18v-6a6 6 0 0 1 6 -6h2a6 6 0 0 1 6 6v6a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3z"></path>
+                            <path d="M10 6v-1a2 2 0 1 1 4 0v1"></path>
+                            <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4"></path>
+                            <path d="M11 10h2"></path>
+                         </svg>
+                        Gerenciar <br>Material Escolar
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="material_limpeza.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-spray" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 10m0 2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2z">
+                            </path>
+                            <path d="M6 10v-4a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v4"></path>
+                            <path d="M15 7h.01"></path>
+                            <path d="M18 9h.01"></path>
+                            <path d="M18 5h.01"></path>
+                            <path d="M21 3h.01"></path>
+                            <path d="M21 7h.01"></path>
+                            <path d="M21 11h.01"></path>
+                            <path d="M10 7h1"></path>
+                        </svg>
+                        Gerenciar<br>Material de Limpeza
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="material_didatico.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-books" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z">
+                            </path>
+                            <path d="M9 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z">
+                            </path>
+                            <path d="M5 8h4"></path>
+                            <path d="M9 16h4"></path>
+                            <path
+                                d="M13.803 4.56l2.184 -.53c.562 -.135 1.133 .19 1.282 .732l3.695 13.418a1.02 1.02 0 0 1 -.634 1.219l-.133 .041l-2.184 .53c-.562 .135 -1.133 -.19 -1.282 -.732l-3.695 -13.418a1.02 1.02 0 0 1 .634 -1.219l.133 -.041z">
+                            </path>
+                            <path d="M14 9l4 -1"></path>
+                            <path d="M16 16l3.923 -.98"></path>
+                        </svg>
+                        Gerenciar<br>Material Didático
+                    </a>
+                </li>
+            </ul>
+            <ul class="authors">
+                <li>
+                    <div class="author-content">
+                        <p>Gabriel G Baldasso <span>✌</span></p>
+                        <p>RA126619</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="author-content">
+                        <p>Thiago M A Matsuzaki <span>✌</span></p>
+                        <p>RA125241</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form_container">
+            <form method="POST">
+                <h2>Material Escolar</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-list" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
+                    <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
+                    <path d="M9 12l.01 0"></path>
+                    <path d="M13 12l2 0"></path>
+                    <path d="M9 16l.01 0"></path>
+                    <path d="M13 16l2 0"></path>
+                 </svg>
+                <label for="tipo_produto">Tipo de Produto:</label>
+                <select id="tipo_produto" name="tipo_produto">
+                    <option value="lapis">Lápis</option>
+                    <option value="caderno">Caderno</option>
+                    <option value="caneta">Caneta</option>
+                </select>
+
+                <br>
+
+                <div id="campos_produto_lapis">
+                    <label for="altura_lapis">Altura (cm):</label>
+                    <input type="number" id="altura_lapis" name="altura_lapis" required min="0">
+
+                    <label>Tipo desenho:</label>
+                    <div class="radio_container">
+                        <div class="radio_centralized">
+                            <input type="radio" id="desenho_sim" name="desenho_lapis">
+                            <label for="desenho_sim">Sim:</label>
+                        </div>
+                        <div class="radio_centralized">
+                            <input type="radio" id="desenho_nao" name="desenho_lapis">
+                            <label for="desenho_nao">Não:</label>
+                        </div>
+                    </div>
+
+                    <label for="marca_lapis">Marca:</label>
+                    <input type="text" id="marca_lapis" name="marca_lapis" required>
+
+                    <label for="quantidade_lapis">Quantidade:</label>
+                    <input type="number" id="quantidade_lapis" name="quantidade_lapis" required min="0">
+                </div>
+
+                <div id="campos_produto_caderno">
+                    <label for="altura_caderno">Altura (cm):</label>
+                    <input type="number" id="altura_caderno" name="altura_caderno" required min="0">
+
+                    <label for="largura_caderno">Largura (cm):</label>
+                    <input type="number" id="largura_caderno" name="largura_caderno" required min="0">
+
+                    <label for="materias_caderno">Número de Matérias:</label>
+                    <input type="number" id="materias_caderno" name="materias_caderno" required min="0">
+
+                    <label for="numero_folhas">Número de Folhas:</label>
+                    <input type="number" id="numero_folhas" name="numero_folhas" required min="0">
+
+                    <label for="marca_caderno">Marca:</label>
+                    <input type="text" id="marca_caderno" name="marca_caderno" required>
+
+                    <label for="quantidade_caderno">Quantidade:</label>
+                    <input type="number" id="quantidade_caderno" name="quantidade_caderno" required min="0">
+                </div>
+
+                <div id="campos_produto_caneta">
+
+                    <label for="altura_caneta">Altura (cm):</label>
+                    <input type="text" id="altura_caneta" name="altura_caneta" required min="0">
+
+                    <label for="cor_caneta">Cor:</label>
+                    <input type="text" id="cor_caneta" name="cor_caneta" required>
+
+                    <label for="marca_caneta">Marca:</label>
+                    <input type="text" id="marca_caneta" name="marca_caneta" required>
+
+                    <label for="quantidade_caneta">Quantidade:</label>
+                    <input type="number" id="quantidade_caneta" name="quantidade_caneta" required min="0">
+                </div>
+                
+                <button type="submit" value="Cadastrar" class="submit_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+                        <path d="M13.5 6.5l4 4"></path>
+                    </svg>
+                    Cadastrar
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript para mostrar/ocultar campos específicos com base no tipo de produto selecionado
+        document.getElementById("tipo_produto").addEventListener("change", function () {
+            var tipoProduto = this.value;
+            document.querySelector("#campos_produto_lapis").style.display = tipoProduto === "lapis" ? "block" : "none";
+            document.querySelector("#campos_produto_caderno").style.display = tipoProduto === "caderno" ? "block" : "none";
+            document.querySelector("#campos_produto_caneta").style.display = tipoProduto === "caneta" ? "block" : "none";
+        });
+    </script>
+</body>
+
+</html>

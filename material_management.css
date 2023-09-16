@@ -1,0 +1,262 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	height: 100vh;
+}
+
+body {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-color: #efefef;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-left: 275px;
+	margin-bottom: 90px;
+}
+
+th {
+	height: 80px;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+tr:nth-child(2n) {
+	background-color: #ffffff;
+}
+
+tr:nth-child(2n + 1) {
+	background-color: #f3f3f3;
+}
+
+input {
+	background-color: transparent;
+}
+
+select {
+	color: white;
+	padding: 10px 20px;
+	background-color: #191919;
+}
+
+button {
+	width: 50px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+}
+
+button > svg {
+	width: 35px;
+	height: 35px;
+}
+
+.table-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 1280px;
+	margin-top: 50px;
+}
+
+.table-container > h2 {
+	font-size: 1.5rem;
+	color: black;
+	width: fit-content;
+	padding: 5px 20px;
+	border-radius: 25px;
+	background-color: lightgreen;
+}
+
+.content-table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+}
+
+.content-table thead tr {
+	background-color: black;
+}
+
+.content-table tbody tr {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.content-table td {
+	padding: 15px 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.content-table tbody tr:last-child {
+	border-bottom: 3px solid black;
+}
+
+.table-action button {
+	margin: 0 5px;
+	border-radius: 3px;
+}
+
+.table-action button:hover {
+	background-color: #dedede;
+}
+
+.icon-tabler-pencil-plus {
+	stroke-width: 1;
+	stroke: rgb(0, 157, 255);
+}
+
+.table-action button:nth-child(1) {
+	border: 1px solid rgb(0, 157, 255);
+	transition: background 500ms;
+}
+
+.table-action button:nth-child(2) {
+	border: 1px solid red;
+	transition: background 500ms;
+}
+
+.table-action button:nth-child(1):hover {
+	background: rgb(0, 157, 255);
+}
+
+.table-action button:nth-child(1):hover svg {
+	stroke: white;
+}
+
+.table-action button:nth-child(2):hover {
+	background: rgb(255, 112, 112);
+}
+
+.table-action button:nth-child(2):hover svg {
+	stroke: white;
+}
+
+.icon-tabler-trash {
+	stroke-width: 0.8;
+	stroke: red;
+}
+
+.card-wrapper {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	width: 100%;
+	margin: 50px 0;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	height: 150px;
+	padding: 10px 0 20px 30px;
+	border: 1px solid white;
+	border-radius: 5px;
+	border-left: 5px solid black;
+	background-color: white;
+}
+
+.card > p {
+	font-size: 1.1rem;
+	color: white;
+	padding: 5px 15px;
+	width: fit-content;
+	background-color: black;
+}
+
+.card span {
+	font-size: 2.75rem;
+}
+
+.card svg {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 35px;
+	height: 35px;
+}
+
+.filter-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#button-create {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: fit-content;
+	padding: 1px 25px;
+	box-shadow: 3px 3px 0 0 black;
+	background-color: lightgreen;
+	cursor: pointer;
+}
+
+#button-create > button {
+	color: black;
+	width: fit-content;
+}
+
+#button-create > svg {
+	stroke: black;
+	stroke-width: 2;
+	width: 25px;
+	height: 25px;
+}
+
+#button-create:active {
+	box-shadow: none;
+	transform: translateY(4px);
+}
+
+#select-items {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#select-items > label {
+	font-size: 1.1rem;
+}
+
+#input-search {
+	display: flex;
+	align-items: center;
+	width: 500px;
+	padding: 10px;
+	background-color: #191919;
+}
+
+#input-search > input {
+	color: white;
+	width: 100%;
+	border: none;
+	outline: none;
+}
+
+#input-search > svg {
+	stroke: white;
+	stroke-width: 2;
+}

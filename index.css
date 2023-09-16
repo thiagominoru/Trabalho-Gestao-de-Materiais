@@ -1,0 +1,243 @@
+* {
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	height: 100%;
+	background-color: #efefef;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 275px;
+}
+
+ul .list-item:nth-child(1) {
+	background-color: #262a2f;
+	border-left: 2px solid white;
+}
+
+ul .list-item:nth-child(1) svg:nth-child(1) {
+	stroke: white;
+}
+
+ul .list-item:nth-child(1) > a {
+	color: white;
+}
+
+.section-card {
+	width: 95%;
+	max-width: 1200px;
+	margin-top: 50px;
+}
+
+.section-card > h2 {
+	font-size: 1.5rem;
+	border-radius: 25px;
+	color: white;
+	display: inline;
+	padding: 5px 20px;
+	background-color: black;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 25px;
+	margin-bottom: 100px;
+	max-width: 1546px;
+	margin-top: 50px;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 200px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+	background-color: white;
+}
+
+.card:nth-child(1) {
+	grid-column: 1 / span 3;
+	border-left: 5px solid lightskyblue;
+}
+
+.card:nth-child(2) {
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 3;
+	border-left: 5px solid lightsalmon;
+}
+
+.card:nth-child(3) {
+	grid-row: 3 / span 1;
+	grid-column: 1 / span 3;
+	border-left: 5px solid lightgreen;
+}
+
+.card:last-child {
+	display: flex;
+	justify-content: center;
+	grid-column: 4 / span 5;
+	grid-row: 1 / span 3;
+
+	border-block: 3px solid black;
+}
+
+.card > svg {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	stroke-width: 1;
+}
+
+.card > img {
+	width: 200px;
+	height: 200px;
+	object-fit: contain;
+	margin-left: 100px;
+}
+
+.card-button-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.card-button-container > h3 {
+	font-size: 1.2rem;
+}
+
+.management-button {
+	width: 125px;
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.management-button a {
+	display: inline-block;
+	color: black;
+	width: 100%;
+	height: 100%;
+	padding: 3px;
+}
+
+.management-button a:hover {
+	color: white;
+	background-color: black;
+}
+
+.task-container > ul {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.list-notification {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	border-right: 2px solid #191919;
+	border-left: 2px solid #191919;
+	border-radius: 5px;
+}
+
+.list-notification input[type="checkbox"] {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 18px;
+	height: 18px;
+	accent-color: black;
+}
+
+input[type="checkbox"]:checked + span {
+	text-decoration: line-through;
+	color: rgb(255, 99, 99);
+}
+
+.list-notification span {
+	color: black;
+	max-width: 350px;
+	padding: 15px;
+}
+
+#material-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+	width: 95%;
+	max-width: 1200px;
+	padding: 50px 0;
+}
+
+#material-container > h2 {
+	display: inline;
+	font-size: 1.5rem;
+	color: white;
+	padding: 5px 20px;
+	border-radius: 25px;
+	background-color: black;
+}
+
+.material-card-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 100%;
+}
+
+.material-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex: 1;
+	gap: 10px;
+	padding: 50px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.material-card > img {
+	width: 200px;
+	height: 250px;
+	object-fit: contain;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 1380px) {
+	.card-container {
+		display: flex;
+	}
+
+	.card {
+		flex-basis: 100%;
+	}
+
+	.card img {
+		margin-left: 30%;
+	}
+}

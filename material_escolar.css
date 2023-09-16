@@ -1,0 +1,21 @@
+ul .list-item:nth-child(3) {
+	background-color: #262a2f;
+	border-left: 2px solid white;
+}
+
+ul .list-item:nth-child(3) svg:nth-child(1) {
+	stroke: white;
+}
+
+ul .list-item:nth-child(3) > a {
+	color: white;
+}
+
+.table-container > h2 {
+	font-size: 1.5rem;
+	color: black;
+	width: fit-content;
+	padding: 5px 20px;
+	border-radius: 25px;
+	background-color: lightskyblue;
+}

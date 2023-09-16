@@ -1,0 +1,187 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #efefef;
+	position: relative;
+	height: 100%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 1100px;
+	padding-left: 275px;
+}
+
+ul .list-item:nth-child(2) {
+	background-color: #262a2f;
+	border-left: 2px solid white;
+}
+
+ul .list-item:nth-child(2) svg:nth-child(1) {
+	stroke: white;
+}
+
+ul .list-item:nth-child(2) > a {
+	color: white;
+}
+
+h2 {
+	position: absolute;
+	top: -32px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.75rem;
+	color: white;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 8px 15px;
+	width: 350px;
+	border-radius: 5px;
+	z-index: 2;
+	background-color: black;
+}
+
+form {
+	position: relative;
+	width: 700px;
+	max-width: 900px;
+	background: #fff;
+	padding: 70px;
+	padding-top: 100px;
+	margin: 0 auto;
+	border: 3px solid black;
+	box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input,
+select {
+	border: none;
+	background-color: #efefef;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+.form_container {
+	display: flex;
+	align-items: end;
+	background-color: white;
+	margin: 100px;
+}
+
+form > svg {
+	top: 25px;
+	right: 58px;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+}
+
+input[type="text"],
+select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	background-color: #efefef;
+}
+
+.submit_button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	font-weight: 600;
+	border: none;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	cursor: pointer;
+	background-color: lightgreen;
+	padding: 10px 15px;
+	border-radius: 3px;
+	margin-top: 30px;
+	box-shadow: 3px 3px black;
+}
+
+.submit_button:active {
+	transform: translateY(4px);
+	box-shadow: none;
+}
+
+input[type="number"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+input[type="radio"] {
+	display: inline;
+}
+
+.radio_container {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	margin: 10px 0 20px 5px;
+}
+
+.radio_centralized {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+#campos_produto_lapis {
+	display: block;
+}
+
+#campos_produto_caderno {
+	display: none;
+}
+
+#campos_produto_caneta {
+	display: none;
+}
+
+#campos_produto_livro {
+	display: block;
+}
+
+#campos_produto_quadro {
+	display: none;
+}
+
+#campos_produto_giz {
+	display: none;
+}
+
+#campos_produto_apagador {
+	display: none;
+}
+
+#campos_produto_pincel {
+	display: none;
+}
